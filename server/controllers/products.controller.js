@@ -12,7 +12,7 @@ const postDataById = async (req, res) => {
     const productSave = await product.save();
     res.json(productSave);
   } catch (err) {
-    res.status(404).json({ message: err.message });
+    res.status(400).json({ message: err.message });
   }
 };
 
@@ -21,7 +21,7 @@ const getAllData = async (req, res) => {
   try {
     res.json({ data: data, message: "Data telah dapatkan" });
   } catch (err) {
-    res.status(404).send(err.message);
+    res.status(400).send(err.message);
   }
 };
 

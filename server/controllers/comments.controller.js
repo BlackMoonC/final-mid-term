@@ -13,7 +13,7 @@ const submitComment = async (req, res) => {
     const commentSave = await comment.save();
     res.json(commentSave);
   } catch (err) {
-    res.status(404).json({ message: err.message });
+    res.status(400).json({ message: err.message });
   }
 };
 // todo: implemnt get all comments
@@ -24,7 +24,7 @@ const getListComment = async (req, res) => {
     const comments = await Comment.find({ id_video: idVideo });
     res.json(comments);
   } catch (err) {
-    res.status(404).json({ message: err.message });
+    res.status(400).json({ message: err.message });
   }
 };
 
