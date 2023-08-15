@@ -20,7 +20,7 @@ const getAllContent = async (req, res) => {
   try {
     res.json({ data: data, message: "Data telah dapatkan" });
   } catch (err) {
-    res.status(404).send(err.message);
+    res.status(400).send(err.message);
   }
 };
 
