@@ -1,0 +1,26 @@
+category{
+    name: "string",
+}
+
+item{
+    - imgUrl: "string",
+    timeWatch: number,
+    live: boolean,
+    offerCondition: boolean,
+    specialOffers: string,
+    - title: "string",
+    - toko: string,
+}
+
+videoThumbnailList{
+    - videoId: string,
+    - urlImage: string,
+}
+
+productList{
+    productID: "string",
+    linkProduct: "string",
+    title: "string",
+    price: "string",
+}
+
