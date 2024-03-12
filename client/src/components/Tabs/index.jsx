@@ -5,7 +5,7 @@ export default function index() {
         <li className="mr-2">
           <a
             href="#"
-            className="inline-block px-4 py-3 text-white bg-blue-600 rounded-lg active"
+            className="inline-block px-4 py-3 text-secondary bg-primary rounded-lg active"
             aria-current="page">
             All
           </a>
