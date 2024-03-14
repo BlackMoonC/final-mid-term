@@ -9,7 +9,7 @@ import CardProduct from "../../components/Card/Product";
 import CardComment from "../../components/Card/Comment";
 import InputComment from "../../components/Input/Comment";
 import { useParams } from "react-router-dom";
-const socket = io("http://localhost:3001");
+const socket = io("https://final-mid-term.vercel.app/");
 const exit = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
