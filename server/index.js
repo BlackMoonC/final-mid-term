@@ -49,9 +49,6 @@ app.use(
     extended: true,
   })
 );
-app.get("/", (req, res) => {
-  res.sendFile(join(__dirname, "index.html"));
-});
 
 io.on("connection", (socket) => {
   // console.log(`⚡: ${socket.id} user just connected!`);
